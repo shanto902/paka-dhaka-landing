@@ -1,7 +1,24 @@
 // app/layout.tsx
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 
 import "./globals.css";
+
+// Local fonts
+const futura = localFont({
+  src: "../assets/fonts/FuturaLT-Book.woff2",
+  variable: "--font-futura",
+});
+
+const lemonMilk = localFont({
+  src: "../assets/fonts/LemonMilk.woff2",
+  variable: "--font-lemon",
+});
+
+const mrSiv = localFont({
+  src: "../assets/fonts/mrsiv.woff2",
+  variable: "--font-mrsiv",
+});
 
 export const metadata: Metadata = {
   title: "Paka | Mark your Paka Moments! ",
@@ -16,7 +33,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body
+        className={`${futura.variable} ${lemonMilk.variable} ${mrSiv.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

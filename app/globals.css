@@ -1,35 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #3b74d2;
   --foreground: #171717;
 }
 
-@font-face {
-  font-family: "FuturaLT-Book";
-  src: url("/fonts/futuralt-book.ttf") format("truetype");
-  font-display: swap;
+.lemon-font {
+  font-family: var(--font-lemon), sans-serif;
 }
-@font-face {
-  font-family: "Mrsiv";
-  src: url("/fonts/mrsiv.ttf") format("truetype");
-  font-display: swap;
+
+.futura-font {
+  font-family: var(--font-futura), sans-serif;
 }
-@font-face {
-  font-family: "LemonMilk";
-  src: url("/fonts/lemonmilk.otf") format("opentype");
-  font-display: swap;
+
+.mrsiv-font {
+  font-family: var(--font-mrsiv), sans-serif;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-
-  /* Custom fonts */
-  --font-futura: "FuturaLT-Book", sans-serif;
-  --font-mrsiv: "Mrsiv", cursive;
-  --font-lemon: "LemonMilk", sans-serif;
-  --font-sans: var(--font-futura);
 }
 
 @media (prefers-color-scheme: dark) {
