@@ -3,8 +3,9 @@
 import React from "react";
 import Image from "next/image";
 import { motion, easeOut } from "framer-motion";
+import { Instagram } from "lucide-react";
 
-import logo from "@/assets/images/logo.png";
+const logo = "/logo.png";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -49,6 +50,8 @@ const Homepage = () => {
             <motion.div variants={fadeUp}>
               <Image
                 src={logo}
+                width={200}
+                height={150}
                 alt="Paka Logo"
                 className="w-40 hidden md:block"
               />
@@ -110,9 +113,15 @@ const Homepage = () => {
 
         {/* Middle Column (Video) */}
         <div className="lg:col-span-2 order-1">
-          <Image src={logo} alt="Paka Logo" className="w-30 md:hidden block" />
+          <Image
+            width={200}
+            height={150}
+            src={logo}
+            alt="Paka Logo"
+            className="w-30 md:hidden block"
+          />
           <motion.video
-            className="md:h-full  mix-blend-normal"
+            className="md:h-full   mix-blend-normal"
             src="/bg-video.mp4"
             autoPlay
             loop
@@ -146,7 +155,19 @@ const Homepage = () => {
             ))}
           </ul>
         </motion.div>
+        <div className="absolute md:bottom-0 bottom-10 z-99 right-0 md:left-1/2 -translate-x-1/2 pb-10 flex justify-center">
+          <a
+            href="https://www.instagram.com/paka.dhaka"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-pink-700 text-white shadow-lg transition-all duration-300 hover:bg-[#f9c74f] hover:text-[#074666]">
+              <Instagram className="h-5 w-5" />
+            </span>
+          </a>
+        </div>
       </section>
+      {/* Bottom Instagram CTA */}
     </motion.div>
   );
 };
