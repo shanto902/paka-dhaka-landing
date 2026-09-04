@@ -93,7 +93,7 @@ const Homepage = () => {
             >
               <motion.a
                 href="https://international.pakadhaka.shop/"
-                className="uppercase mrsiv-font transition-all duration-300 cursor-pointer hover:text-[#074666] hover:bg-[#f9c74f] bg-[#ff2d25] text-white rounded-full py-3 px-4"
+                className="uppercase futura-font transition-all duration-300 cursor-pointer hover:text-[#074666] hover:bg-[#f9c74f] bg-[#ff2d25] text-white rounded-full py-3 px-4"
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -101,7 +101,7 @@ const Homepage = () => {
               </motion.a>
               <motion.a
                 href="https://bd.pakadhaka.shop/"
-                className="uppercase mrsiv-font transition-all duration-300 cursor-pointer hover:text-[#074666] hover:bg-[#f9c74f] bg-[#ff2d25] text-white rounded-full py-3 px-4"
+                className="uppercase futura-font transition-all duration-300 cursor-pointer hover:text-[#074666] hover:bg-[#f9c74f] bg-[#ff2d25] text-white rounded-full py-3 px-4"
                 whileHover={{ scale: 1.04, y: -2 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -141,7 +141,7 @@ const Homepage = () => {
           whileInView="show"
           viewport={{ once: true }}
         >
-          <ul className="flex flex-row flex-wrap lg:flex-col lg:gap-1 gap-3 justify-center">
+          <ul className="flex flex-row futura-font flex-wrap lg:flex-col lg:gap-1 gap-3 justify-center">
             {[
               "stationery",
               "bags",
