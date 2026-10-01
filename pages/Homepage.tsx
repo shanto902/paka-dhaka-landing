@@ -161,7 +161,7 @@ const Homepage = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <span className="flex h-12 w-12 items-center justify-center rounded-full bg-pink-700 text-white shadow-lg transition-all duration-300 hover:bg-[#f9c74f] hover:text-[#074666]">
+            <span className="flex h-12 w-12 items-center justify-center rounded-full over:text-[#074666] hover:bg-[#f9c74f] bg-[#ff2d25] text-white  shadow-lg transition-all duration-300 hover:bg-[#f9c74f] hover:text-[#074666]">
               <Instagram className="h-5 w-5" />
             </span>
           </a>
